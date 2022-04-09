@@ -124,7 +124,7 @@ private:
 
         // intersection points
         qreal x1, x2;
-        for (int y = p1.y() + 1; y <= p3.y(); y += 1) {
+        for (int y = p1.y() + 1; y < p3.y(); y += 1) {
             if (y >= int(p2.y()) || kY1 == 0) {
                 switched = true;
                 kX1 = p3.x() - p2.x();
